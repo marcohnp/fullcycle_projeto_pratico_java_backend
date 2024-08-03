@@ -1,0 +1,5 @@
+rootProject.name = 'fullcycle-admin-do-catalogo'
+include 'domain'
+include 'application'
+include 'infrastructure'
+
