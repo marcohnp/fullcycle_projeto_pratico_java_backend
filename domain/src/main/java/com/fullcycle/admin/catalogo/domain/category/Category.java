@@ -13,27 +13,27 @@ public class Category extends AggregateRoot<CategoryID> {
     private Instant updatedAt;
     private Instant deletedAt;
 
-    private Category(final CategoryID id,
-                     final String name,
-                     final String description,
-                     final boolean active,
-                     final Instant createdAt,
-                     final Instant updatedAt,
-                     final Instant deletedAt
+    private Category(final CategoryID anId,
+                     final String aName,
+                     final String aDescription,
+                     final boolean isActive,
+                     final Instant aCreatedAt,
+                     final Instant anUpdatedAt,
+                     final Instant aDeletedAt
     ) {
-        super(id);
-        this.name = name;
-        this.description = description;
-        this.active = active;
-        this.createdAt = createdAt;
-        this.updatedAt = updatedAt;
-        this.deletedAt = deletedAt;
+        super(anId);
+        this.name = aName;
+        this.description = aDescription;
+        this.active = isActive;
+        this.createdAt = aCreatedAt;
+        this.updatedAt = anUpdatedAt;
+        this.deletedAt = aDeletedAt;
     }
 
-    public static Category newCategory(String name, String description, boolean isActive) {
+    public static Category newCategory(String aName, String aDescription, boolean isActive) {
         final var id = CategoryID.unique();
         final var now = Instant.now();
-        return new Category(id, name, description, isActive, now, now, null);
+        return new Category(id, aName, aDescription, isActive, now, now, null);
     }
 
     @Override

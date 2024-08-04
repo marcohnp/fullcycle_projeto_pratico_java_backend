@@ -9,9 +9,9 @@ public class CategoryValidator extends Validator {
 
     private final Category category;
 
-    public CategoryValidator(final Category category, final ValidationHandler handler) {
-        super(handler);
-        this.category = category;
+    public CategoryValidator(final Category aCategory, final ValidationHandler aHandler) {
+        super(aHandler);
+        this.category = aCategory;
     }
 
     @Override

@@ -4,11 +4,11 @@ import java.util.List;
 
 public interface ValidationHandler {
 
-    ValidationHandler append(Error error);
+    ValidationHandler append(Error anError);
 
-    ValidationHandler append(ValidationHandler handler);
+    ValidationHandler append(ValidationHandler aHandler);
 
-    ValidationHandler validate(Validation validation);
+    ValidationHandler validate(Validation aValidation);
 
     List<Error> getErrors();
 
