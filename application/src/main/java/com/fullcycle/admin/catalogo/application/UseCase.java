@@ -2,9 +2,7 @@ package com.fullcycle.admin.catalogo.application;
 
 import com.fullcycle.admin.catalogo.domain.category.Category;
 
-public class UseCase {
+public abstract class UseCase<IN, OUT> {
 
-    public Category execute() {
-        return Category.newCategory("Nome", "description", true );
-    }
+    public abstract OUT execute(IN anIN);
 }

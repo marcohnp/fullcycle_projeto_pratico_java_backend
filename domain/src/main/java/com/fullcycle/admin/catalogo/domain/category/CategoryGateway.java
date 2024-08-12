@@ -4,7 +4,7 @@ import com.fullcycle.admin.catalogo.domain.Pagination;
 
 import java.util.Optional;
 
-public interface CatagoryGateway {
+public interface CategoryGateway {
 
     Category create(Category aCategory);
 
