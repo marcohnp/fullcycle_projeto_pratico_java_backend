@@ -13,7 +13,7 @@ import static org.mockito.Mockito.doThrow;
 import static org.mockito.Mockito.verifyNoInteractions;
 
 @IntegrationTest
-public class CreateCategoryUseCaseIT {
+class CreateCategoryUseCaseIT {
 
     @Autowired
     private CreateCategoryUseCase useCase;
